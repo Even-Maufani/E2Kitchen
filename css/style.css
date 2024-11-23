@@ -16,6 +16,15 @@ html {
   scroll-behavior: smooth;
 }
 
+.wa .wa-image {
+  width: 5%;
+  display: flex;
+  position: fixed;
+  z-index: 9999;
+  bottom: 0;
+  right: 0;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
@@ -38,6 +47,14 @@ body {
   left: 0;
   right: 0;
   z-index: 9999;
+}
+
+.navbar .E2-image {
+  width: 7%;
+  display: flex;
+  position: absolute;
+  left: 5px;
+  margin-top: 60px;
 }
 
 .navbar .navbar-logo {
@@ -287,11 +304,11 @@ body {
 
 .about .row .about-img img {
   width: 100%;
-  -webkit-mask-image: url(../img/menu/Leaves.svg);
-  -webkit-mask-size: 80rem;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position-x: 40px;
-  -webkit-mask-position-y: -55px;
+  mask-image: url(../img/woman.svg);
+  mask-size: 25rem;
+  mask-repeat: no-repeat;
+  -webkit-mask-position-x: 145px;
+  -webkit-mask-position-y: -15px;
 }
 
 .about .row .content {
