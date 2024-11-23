@@ -654,6 +654,13 @@ footer .credit a {
     }
   }
 
+  /* WA */
+  .wa .wa-image {
+    width: 10%;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
   /*  Hero Section*/
 
   .hero .content h1 {
