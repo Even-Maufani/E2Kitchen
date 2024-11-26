@@ -312,7 +312,7 @@ body {
 .hero .content {
   padding: 1.4rem 7%;
   /* min-width: 40rem; */
-  width: 100%;
+     width: 100%;
   text-align: center;
   position: fixed;
   top: 120px;

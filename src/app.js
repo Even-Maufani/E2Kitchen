@@ -74,6 +74,7 @@ checkoutButton.disabled = true;
 
 // button validation agar semua data harus diisi
 const form = document.querySelector("#checkoutForm");
+
 form.addEventListener("keyup", function () {
   for (let i = 0; i < form.elements.length; i++) {
     if (form.elements[i].value.length !== 0) {
@@ -94,22 +95,20 @@ checkoutButton.addEventListener("click", function (e) {
   const data = new URLSearchParams(formData);
   const objData = Object.fromEntries(data);
   const message = formatMessage(objData);
-  window.open("https://wa.me/6287874282343?=" + encodeURIComponent(message));
+  window.open('http://wa.me/6287874282343?text=' + encodeURIComponent(message));
 });
 
 // format pesan whatsapp
 const formatMessage = (obj) => {
-  return `data customer
-  Nama: ${obj.nama}
-  Email: ${obj.email}
-  No.HP: ${obj.phone}
-  Data Pesanan
-${JSON.parse(obj.items).map(
-  (item) => `${item.name} (${item.quantity} X ${rupiah(item.total)})\n`
-)}
+  return `Data Customer
+nama: ${obj.nama}
+Email: ${obj.email}
+No.HP: ${obj.phone}
+Data Pesanan 
+${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`)} 
   TOTAL: ${rupiah(obj.total)}
-  Terima Kasih`;
-};
+  Terima Kasih.`;
+} 
 
 // konversi ke rupiah
 const rupiah = (number) => {
