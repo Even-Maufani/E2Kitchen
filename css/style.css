@@ -415,7 +415,7 @@ body {
   font-weight: 100;
   list-style: none;
   text-indent: 0.8rem;
-  line-height: 1.6rem;
+  line-height: 2rem;
   margin-left: 40px;
 }
 
@@ -480,6 +480,10 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
   margin-top: 4rem;
+}
+
+.products p {
+  font-size: 17px;
 }
 
 .products .product-card {
