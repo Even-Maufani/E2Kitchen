@@ -764,7 +764,9 @@ footer .credit a {
     margin-bottom: 8px;
   }
   /*  Hero Section*/
-
+  .hero {
+    background-position-x: 35%;
+  }
   .hero .content h1 {
     display: inline;
     margin-top: 20;
