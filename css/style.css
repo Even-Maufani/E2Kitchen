@@ -332,12 +332,15 @@ body {
 }
 
 .hero .content p {
-  font-size: 2rem;
+  font-size: 1.7rem;
+  color: #010101;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: bold;
   margin-top: 1rem;
   padding-top: 1rem;
-  font-weight: 100;
+  font-weight: bold;
   line-height: 0.1;
+  text-shadow: 1px 2px 6px rgb(255, 255, 255);
   
   /* mix-blend-mode: difference; */
   /* position: relative; */
@@ -587,6 +590,12 @@ body {
   cursor: pointer;
 }
 
+.contact p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* footer section */
 footer {
   background-color: var(--primary);
   text-align: center;
@@ -768,8 +777,9 @@ footer .credit a {
     background-position-x: 35%;
   }
   .hero .content h1 {
-    display: inline;
-    margin-top: 20;
+    display: block;
+    position: relative;
+    margin-top: -20;
     margin-right: 20px;
     margin-left: -8px;
   }
