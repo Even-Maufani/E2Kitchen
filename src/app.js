@@ -1,11 +1,11 @@
 document.addEventListener("alpine:init", () => {
   Alpine.data("products", () => ({
     items: [
-      { id: 1, name: "Robusta", img: "1.jpg", price: 20000 },
-      { id: 2, name: "Arabika", img: "2.jpg", price: 30000 },
-      { id: 3, name: "Liberika", img: "3.jpg", price: 35000 },
-      { id: 4, name: "Bajawa", img: "4.jpg", price: 25000 },
-      { id: 5, name: "Toraja", img: "5.jpg", price: 25000 },
+      { id: 1, name: "Ayam Geprek Cabe Ijo", img: "1.jpg", price: 15000 },
+      { id: 2, name: "Ayam Geprek Cabe Merah", img: "2.jpg", price: 15000 },
+      { id: 3, name: "Ikan Kuah Asam", img: "3.jpg", price: 20000 },
+      { id: 4, name: "Ice Tea", img: "4.jpg", price: 5000 },
+      { id: 5, name: "Black Coffee", img: "5.jpg", price: 5000 },
     ],
   }));
 
@@ -101,8 +101,8 @@ checkoutButton.addEventListener("click", function (e) {
 // format pesan whatsapp
 const formatMessage = (obj) => {
   return `Data Customer
-nama: ${obj.nama}
-Email: ${obj.email}
+Nama: ${obj.name}
+Alamat: ${obj.email}
 No.HP: ${obj.phone}
 Data Pesanan 
 ${JSON.parse(obj.items).map((item) => `${item.name} (${item.quantity} x ${rupiah(item.total)}) \n`)} 
